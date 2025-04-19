@@ -17,10 +17,12 @@ public class Command implements CommandExecutor {
     @Override
     public boolean onCommand(@NotNull CommandSender commandSender, org.bukkit.command.@NotNull Command command, @NotNull String s, @NotNull String[] strings) {
         if ( commandSender instanceof Player player){
+
             InvGUI gui = new InvGUI(repository);
             gui.setup();
             player.openInventory(gui.getInventory());
         }
         return false;
     }
+
 }
