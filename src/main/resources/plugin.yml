@@ -1,0 +1,4 @@
+name: NStudy
+version: '1.0.0'
+main: org.nano.nStudy.NStudy
+api-version: '1.20'
